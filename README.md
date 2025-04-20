@@ -122,7 +122,31 @@ sudo ./ovpn.sh
 
 Para revocar clientes existentes:
 
+## 🖥️ Extra
+Instalación y Configuración de Darkstat para Monitorear IPS
+
+**Darkstat** es una herramienta que permite capturar y visualizar el tráfico de red en tiempo real, lo que te permitirá ver las direcciones IP (IPS) conectadas a tu servidor. A continuación, te explico cómo instalar y configurar **Darkstat** en tu servidor para monitorear tráfico.
+
+### Instalación de Darkstat
+
+#### Instalar Darkstat en tu servidor:
+
+Para sistemas basados en Debian/Ubuntu:
+
 ```bash
-sudo ./ovpn.sh
-# Opción 2 → Revocar cliente
+sudo apt update
+sudo apt install darkstat
 ```
+
+### Iniciar Darkstat:
+Después de la instalación, puedes iniciar Darkstat de la siguiente manera:
+
+```bash
+sudo systemctl start darkstat
+sudo systemctl enable darkstat
+```
+
+### Configuración de Darkstat
+Configuración del interfaz de red:
+El archivo de configuración de Darkstat se encuentra en **/etc/darkstat/init.cfg**. Debes editar este archivo para establecer la interfaz de red que quieres monitorear.
+

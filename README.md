@@ -164,3 +164,7 @@ http://<IP_DE_TU_SERVIDOR>:667
 
 Desde ahí, podrás ver las estadísticas de tráfico y las direcciones IP conectadas en tiempo real.
 
+
+## 📸 Fotos
+<img src="https://github.com/Israelvbox/OpenVPN/blob/main/Images/Darkstat.png"> 
+

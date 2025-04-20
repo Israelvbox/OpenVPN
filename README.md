@@ -129,8 +129,6 @@ Instalación y Configuración de Darkstat para Monitorear IPS
 
 ### Instalación de Darkstat
 
-#### Instalar Darkstat en tu servidor:
-
 Para sistemas basados en Debian/Ubuntu:
 
 ```bash
@@ -149,4 +147,20 @@ sudo systemctl enable darkstat
 ### Configuración de Darkstat
 Configuración del interfaz de red:
 El archivo de configuración de Darkstat se encuentra en **/etc/darkstat/init.cfg**. Debes editar este archivo para establecer la interfaz de red que quieres monitorear.
+Abre el archivo con tu editor de texto favorito (por ejemplo, **nano**):
+
+```bash
+sudo nano /etc/darkstat/init.cfg
+```
+
+Busca la línea iface y establece la interfaz de red que deseas monitorear, por ejemplo, **eth0**, **ens33**, etc. Guarda y cierra el archivo.
+
+Acceder a la interfaz web de Darkstat:
+Darkstat proporciona una interfaz web en el puerto 667. Para acceder a ella, abre tu navegador y dirígete a:
+
+```bash
+http://<IP_DE_TU_SERVIDOR>:667
+```
+
+Desde ahí, podrás ver las estadísticas de tráfico y las direcciones IP conectadas en tiempo real.
 

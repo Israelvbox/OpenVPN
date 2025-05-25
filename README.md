@@ -27,7 +27,7 @@ Este script bash automatiza completamente la instalación y configuración de un
 ## 🚀 Instalación
 
 ```bash
-curl -O https://github.com/Israelvbox/OpenVPN/blob/main/ovpn.sh
+curl -O https://raw.githubusercontent.com/Israelvbox/OpenVPN/main/ovpn.sh
 chmod +x ovpn.sh
 sudo ./ovpn.sh
 ```
